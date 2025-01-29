@@ -67,7 +67,8 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     modal.style.cssText = `
       position: absolute;
       width: 420px;
-      padding: 20px;
+      padding: 15px;
+      padding-top: 5px;
       background: #ffffff;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -88,7 +89,6 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     header.style.cssText = `
       cursor: move;
       user-select: none;
-      margin-bottom: 15px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -102,6 +102,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
       cursor: pointer;
       color: #666;
       padding: 0 5px;
+      padding-bottom: 15px;
       margin-left: auto;
     `;
     closeButton.addEventListener("click", () => modal.remove());
@@ -184,7 +185,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     const sendButton = document.createElement("button");
     sendButton.innerText = "Send";
     sendButton.style.cssText = `
-      background-color: #4CAF50;
+      background-color:rgb(88, 140, 238);
       color: white;
       padding: 8px 12px;
       border: none;
