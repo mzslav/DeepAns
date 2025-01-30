@@ -1,0 +1,322 @@
+.deepans-selection-button {
+    position: absolute;
+    z-index: 10000;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .deepans-selection-img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .deepans-modal {
+    position: absolute;
+    width: 420px;
+    padding: 15px;
+    padding-top: 5px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 10001;
+    display: flex;
+    flex-direction: column;
+    cursor: default;
+    overflow: hidden;
+  }
+  
+  .deepans-modal-header {
+    cursor: grab;
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .deepans-modal-close {
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+    padding: 0 5px;
+    padding-bottom: 15px;
+    margin-left: auto;
+  }
+  
+  .deepans-modal-textarea {
+    max-width: 420px;
+    height: 80px;
+    margin-bottom: 12px;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    resize: none;
+  }
+  
+  .deepans-modal-response-container {
+    margin-top: 12px;
+    font-size: 14px;
+    max-height: 500px; 
+    overflow-y: auto; 
+  }
+  
+  .deepans-modal-select {
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+  }
+  
+  .deepans-modal-send-button {
+    background-color: rgb(88, 140, 238);
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .deepans-modal-response {
+    margin-top: 12px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #f1f1f1;
+    user-select: text;
+    max-height: 300px; 
+    overflow-y: auto;
+    margin-bottom: 10px;
+  }
+
+
+.deepans-selection-button {
+    position: absolute;
+    z-index: 10000;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .deepans-selection-img {
+    width: 24px;
+    height: 24px;
+  }
+  
+
+  .deepans-modal {
+    position: absolute;
+    width: 420px;
+    padding: 15px;
+    padding-top: 5px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 10001;
+    display: flex;
+    flex-direction: column;
+    cursor: default;
+    overflow: hidden;
+    max-height: 620px;
+  }
+  
+  .deepans-modal-header {
+    cursor: grab;
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .close-btn {
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+    padding: 0 5px;
+    padding-bottom: 15px;
+    margin-left: auto;
+  }
+  
+
+.resize-handle {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    cursor: se-resize; 
+    background: #ddd;
+    border-radius: 50%;
+  }
+  
+
+.deepans-modal-copy-button {
+    background-color: rgb(88, 140, 238);
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 5px 10px; 
+    cursor: pointer; 
+    font-size: 12px;
+    margin-top: 10px; 
+    transition: background-color 0.3s ease; 
+  }
+
+  .deepans-modal-copy-button:hover {
+    background-color: rgb(62, 124, 240);
+  }
+
+  .deepans-modal-copy-button:active {
+    background-color: rgb(18, 95, 238);
+  }
+  
+
+  .deepans-modal-copy-confirmation {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    opacity: 0;
+    animation: fadeInOut 3s forwards; 
+  }
+  
+
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+
+.stream-container {
+    display: flex;
+    gap: 8px; 
+    margin-bottom: 0; 
+    align-items: bottom;
+}
+
+.fast-mode-container {
+    display: flex;
+    align-items: bottom; 
+    display: row;
+    justify-content: center;
+    
+}
+
+.stream-label, .fast-mode-label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    line-height: 20px;
+    margin-right: 8px; 
+}
+
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+.slider.round {
+    border-radius: 20px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+  
+  .toggle-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+    
+  }
+  
+  .fast-mode-label, .stream-label {
+    display: flex;
+    gap: 20px;
+
+  }
+
+.deepans-selection-img {
+    position: relative;
+    opacity: 0;
+    transform: translateY(20px); 
+    animation: fadeInUp 0.4s ease-out forwards; 
+  }
+  
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px); 
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); 
+    }
+  }
+  

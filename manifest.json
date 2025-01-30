@@ -3,7 +3,7 @@
   "name": "DeepAns Extension",
   "version": "1.0",
   "description": "Send selected text to a neural network API and view the response in a modal window.",
-  "permissions": ["contextMenus", "scripting", "activeTab"],
+  "permissions": ["contextMenus", "scripting", "activeTab","storage"],
   "host_permissions": ["<all_urls>"],
   "background": {
     "service_worker": "background.js"
@@ -16,6 +16,7 @@
     {
       "matches": ["<all_urls>"],
       "js": ["content.js"],
+      "css": ["style.css"],
       "type": "module"
  
     }
