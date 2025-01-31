@@ -222,7 +222,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 
 
 
-    sendButton.addEventListener("click", async () => {
+  sendButton.addEventListener("click", async () => {
   const selectedModel = modelSelect.value;
   const apiKey = "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";
   const apiUrl = "https://openrouter.ai/api/v1/chat/completions";
@@ -230,7 +230,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   const isFastModeEnabled = fastModeToggleInput.checked;
   const models = isFastModeEnabled ? Array.from(modelSelect.options).map(opt => ({ value: opt.value, text: opt.innerText })) : [{ value: selectedModel, text: modelSelect.selectedOptions[0].innerText }];
 
-  responseContainer.innerHTML = "";
+
 
   models.forEach(async ({ value: model, text: modelText }) => {
     const loadingMessage = document.createElement("div");
@@ -266,7 +266,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
           let content = "";
 
           const modelResponse = document.createElement("div");
-          modelResponse.classList.add("deepans-modal-response");
+          modelResponse.classList.add("deeepans-modal-respons");
 
           const modelTitle = document.createElement("strong");
           modelTitle.innerText = `${modelText}:`;
