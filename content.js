@@ -1,3 +1,6 @@
+const apiKey = ""; //openrouter api key    example: sk-or-v1-af9ddf4645dsf2sda200dsf0js35543
+const apiUrl = "https://openrouter.ai/api/v1/chat/completions";
+
 const MODELS = [
   { id: "deepseek/deepseek-chat", name: "DeepSeek V3" },
   { id: "gpt-4o-mini", name: "GPT-4o Mini" },
@@ -224,8 +227,6 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 
   sendButton.addEventListener("click", async () => {
   const selectedModel = modelSelect.value;
-  const apiKey = "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";
-  const apiUrl = "https://openrouter.ai/api/v1/chat/completions";
   const isStreamEnabled = streamToggleInput.checked;
   const isFastModeEnabled = fastModeToggleInput.checked;
   const models = isFastModeEnabled ? Array.from(modelSelect.options).map(opt => ({ value: opt.value, text: opt.innerText })) : [{ value: selectedModel, text: modelSelect.selectedOptions[0].innerText }];
