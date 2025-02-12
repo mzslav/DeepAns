@@ -1,5 +1,6 @@
 # OpenRouter API Chrome Extension
-![image](https://github.com/user-attachments/assets/2bda7c84-c453-48b7-bb40-46823dec9eab)
+![image](https://github.com/user-attachments/assets/9fd2d7ba-b699-4d76-b539-e6326e4d5fc1)
+
 
 This Chrome extension enhances user interaction by providing a contextual menu for selected text, allowing users to send text queries to AI models via OpenRouter API and receive responses in a modal window.
 
